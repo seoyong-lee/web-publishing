@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOS 실습 - 답안</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    .box {
+      width: 400px;
+      height: 200px;
+      background-color: #d99f9f;
+      color: #fff;
+      margin: 24px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <div style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+    아래로 스크롤 해보세요 ↓
+  </div>
+
+  <div class="box" data-aos="fade-up">1</div>
+  <div class="box" data-aos="fade-up">2</div>
+  <div class="box" data-aos="fade-up">3</div>
+  <div class="box" data-aos="fade-up">4</div>
+  <div class="box" data-aos="fade-up">5</div>
+  <div class="box" data-aos="fade-up">6</div>
+  <div class="box" data-aos="fade-up">7</div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

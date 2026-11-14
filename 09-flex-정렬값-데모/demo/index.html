@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex 정렬값 데모</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>justify-content (기본 축 정렬)</h2>
+  <p class="label">flex-start (기본값)</p>
+  <div class="flex-row jc-start"><div class="item">1</div><div class="item">2</div><div class="item">3</div></div>
+  <p class="label">center</p>
+  <div class="flex-row jc-center"><div class="item">1</div><div class="item">2</div><div class="item">3</div></div>
+  <p class="label">flex-end</p>
+  <div class="flex-row jc-end"><div class="item">1</div><div class="item">2</div><div class="item">3</div></div>
+  <p class="label">space-between</p>
+  <div class="flex-row jc-between"><div class="item">1</div><div class="item">2</div><div class="item">3</div></div>
+  <p class="label">space-around</p>
+  <div class="flex-row jc-around"><div class="item">1</div><div class="item">2</div><div class="item">3</div></div>
+
+  <h2>align-items (교차 축 정렬)</h2>
+  <p class="label">stretch (기본값)</p>
+  <div class="flex-row-tall ai-stretch"><div class="item">1</div><div class="item">2</div></div>
+  <p class="label">flex-start</p>
+  <div class="flex-row-tall ai-start"><div class="item">1</div><div class="item">2</div></div>
+  <p class="label">center</p>
+  <div class="flex-row-tall ai-center"><div class="item">1</div><div class="item">2</div></div>
+  <p class="label">flex-end</p>
+  <div class="flex-row-tall ai-end"><div class="item">1</div><div class="item">2</div></div>
+
+  <h2>flex-wrap</h2>
+  <p class="label">wrap: 화면(컨테이너) 너비를 줄여보세요 — 다음 줄로 넘어갑니다</p>
+  <div class="flex-row wrap-demo">
+    <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    <div class="item">4</div><div class="item">5</div><div class="item">6</div>
+  </div>
+
+  <h2>gap</h2>
+  <div class="flex-row gap-demo"><div class="item">1</div><div class="item">2</div><div class="item">3</div></div>
+
+  <h2>flex-grow / flex-shrink</h2>
+  <p class="label">flex-grow: 0, 1, 2 비교 (남는 공간을 1:2 비율로 나눠 가짐)</p>
+  <div class="flex-row grow-demo">
+    <div class="item grow-0">grow:0</div>
+    <div class="item grow-1">grow:1</div>
+    <div class="item grow-2">grow:2</div>
+  </div>
+
+</body>
+</html>

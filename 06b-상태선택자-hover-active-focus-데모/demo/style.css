@@ -1,0 +1,47 @@
+body { font-family: sans-serif; max-width: 600px; margin: 40px auto; line-height: 1.6; }
+h1 { margin-bottom: 4px; }
+.hint { color: #888; margin-top: 0; }
+section { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 1px solid #eee; }
+h2 { color: #6c5ce7; font-size: 18px; }
+
+/* 01. 링크 상태 — hover/active일 때만 밑줄 */
+.demo-link {
+  color: #0984e3;
+  text-decoration: none;
+  font-size: 18px;
+}
+.demo-link:hover,
+.demo-link:active {
+  text-decoration: underline;
+}
+
+/* 01-1. 버튼 상태 — hover는 살짝, active는 더 진하게 */
+.demo-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.demo-button:hover {
+  background-color: #5849c2; /* 살짝 진하게 */
+}
+.demo-button:active {
+  background-color: #4534a0; /* 클릭하는 순간 더 진하게 */
+}
+
+/* 02. 입력창 포커스 — 마우스 클릭 또는 Tab 키 이동 시 */
+.demo-input {
+  padding: 8px 12px;
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  width: 240px;
+  outline: none; /* 브라우저 기본 파란 테두리 대신 아래 커스텀 스타일 사용 */
+}
+.demo-input:focus {
+  border-color: #6c5ce7;
+  background-color: #f5f3ff;
+}

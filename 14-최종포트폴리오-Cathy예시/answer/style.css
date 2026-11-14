@@ -1,0 +1,77 @@
+html {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  max-width: 720px;
+  color: #808080;
+  margin: 0 auto;
+  padding: 186px 16px;   /* 위아래 186px · 좌우 16px (모바일에서도 본문 폭 유지) */
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+}
+
+a {
+  color: #808080;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #222;
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  gap: 10px;
+}
+
+.current-page {
+  color: #222;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  color: #222;
+  font-weight: 400;
+}
+
+.hero {
+  height: 400px;
+  object-fit: cover;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.name {
+  color: #222;
+}
+
+.divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 20px;
+}
+
+footer {
+  font-size: 14px;
+}

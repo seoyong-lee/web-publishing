@@ -1,0 +1,203 @@
+/* 기본 설정 */
+* { box-sizing: border-box; }
+
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2d2f3a;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+img { max-width: 100%; }
+
+h1, h2, h3 { line-height: 1.25; margin: 0; }
+p { margin: 0; }
+
+a { color: #6c5ce7; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 헤더 — 로고는 왼쪽, 메뉴는 오른쪽 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.logo {
+  font-weight: 700;
+  color: #2d2f3a;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a { color: #5a5d70; }
+.nav a:hover { color: #6c5ce7; }
+
+/* 본문 — 1컬럼, 가운데 */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 소개 */
+.hero {
+  padding: 96px 0 80px;
+}
+
+.hero-label {
+  color: #6c5ce7;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  max-width: 560px;
+  font-size: 18px;
+  color: #5a5d70;
+  margin-bottom: 32px;
+}
+
+/* 버튼 */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #6c5ce7;
+  border-radius: 999px;
+  background-color: #6c5ce7;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: #5849c2;
+  border-color: #5849c2;
+  text-decoration: none;
+}
+
+.button-line {
+  background-color: #ffffff;
+  color: #6c5ce7;
+}
+
+.button-line:hover {
+  background-color: #f5f3ff;
+  border-color: #6c5ce7;
+}
+
+/* 섹션 공통 */
+.section {
+  padding: 64px 0;
+  border-top: 1px solid #ececf2;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+/* 작업 — 같은 너비 카드 3개 */
+.works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.work h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.work p {
+  font-size: 15px;
+  color: #5a5d70;
+}
+
+/* about — 사진과 글을 나란히 */
+.about {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.profile {
+  width: 160px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.about-text p { margin-bottom: 16px; }
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+
+.skills li {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background-color: #f5f3ff;
+  color: #6c5ce7;
+  font-size: 14px;
+}
+
+/* 연락처 */
+.contact { text-align: center; }
+
+.contact p {
+  color: #5a5d70;
+  margin-bottom: 32px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* 푸터 */
+.footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  border-top: 1px solid #ececf2;
+  font-size: 14px;
+  color: #9a9db0;
+  text-align: center;
+}
+
+/* 화면이 좁을 때 (태블릿 · 휴대폰) */
+@media (max-width: 720px) {
+  .hero { padding: 56px 0 48px; }
+  .hero h1 { font-size: 34px; }
+  .works { grid-template-columns: 1fr; }
+  .about { flex-direction: column; }
+}

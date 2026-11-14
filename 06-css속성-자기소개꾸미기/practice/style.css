@@ -1,0 +1,24 @@
+/* 실습 ④: 빈칸( : 뒤 )을 채워 보세요. 슬라이드의 표와 같은 순서입니다.
+   웹 폰트는 구글 폰트나 눈누에서 고른 뒤
+   - <link …> 코드는 index.html 의 head 안에 붙이고
+   - font-family 에는 폰트 이름을 적습니다. */
+
+html {
+  font-family: ;      /* 웹 폰트 이름 */
+  font-size: 16px;
+  line-height: ;
+  color: ;
+}
+
+body { margin: ; background-color: ; }
+
+.profile { width: ; border-radius: ; }
+
+.header {
+  background-color: ;
+  color: ;
+  text-align: center;
+  padding: ;
+}
+
+.main { max-width: ; margin: ; padding: ; }

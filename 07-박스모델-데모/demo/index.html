@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스 모델 데모</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>박스 모델 데모</h1>
+
+  <h2>1. padding 값 개수 비교 (개발자 도구로 박스 모델 확인해보세요)</h2>
+  <div class="box padding-1">padding: 8px;</div>
+  <div class="box padding-2">padding: 16px 8px;</div>
+  <div class="box padding-4">padding: 16px 8px 24px 10px;</div>
+
+  <h2>2. margin: auto 가운데 정렬</h2>
+  <div class="centered">width: 300px; margin: 0 auto;</div>
+
+  <h2>3. box-sizing 비교</h2>
+  <div class="box-content-box">width: 300px; box-sizing: content-box (기본값)</div>
+  <div class="box-border-box">width: 300px; box-sizing: border-box</div>
+</body>
+</html>

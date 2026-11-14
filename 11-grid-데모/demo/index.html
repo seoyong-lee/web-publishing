@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid 데모</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>1. 그리드 나누기 (고정 픽셀)</h2>
+  <div class="grid-fixed">
+    <div class="cell">1</div><div class="cell">2</div><div class="cell">3</div>
+    <div class="cell">4</div><div class="cell">5</div><div class="cell">6</div>
+  </div>
+
+  <h2>2. fr 단위 (1:1:1 비율)</h2>
+  <div class="grid-fr">
+    <div class="cell">1</div><div class="cell">2</div><div class="cell">3</div>
+  </div>
+
+  <h2>3. repeat() + minmax() (반응형 — 창 너비를 줄여보세요)</h2>
+  <div class="grid-minmax">
+    <div class="cell">1</div><div class="cell">2</div><div class="cell">3</div>
+    <div class="cell">4</div><div class="cell">5</div><div class="cell">6</div>
+  </div>
+
+  <h2>4. 라인 번호로 배치하기 (grid-column / grid-row)</h2>
+  <div class="grid-placement">
+    <div class="cell wide">2번~4번 컬럼, 1번~3번 로우 차지</div>
+    <div class="cell">2</div>
+    <div class="cell">3</div>
+  </div>
+
+  <h2>5. 이름으로 배치하기 (grid-template-areas)</h2>
+  <div class="grid-areas">
+    <div class="area-sidebar">sidebar</div>
+    <div class="area-main">main</div>
+    <div class="area-player">player</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!-- STEP 3: HTML + CSS + JS
+     이제 버튼을 클릭하면 JS로 만든 동작이 실행됩니다. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEP 3 - HTML + CSS + JS</title>
+  <style>
+    html {
+      font-family: sans-serif;
+      background-color: #f7f5f2;
+    }
+    body {
+      max-width: 480px;
+      margin: 80px auto;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #777;
+    }
+    button {
+      padding: 12px 24px;
+      background-color: #6c5ce7;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>환영합니다</h1>
+  <p>이 버튼을 눌러보세요.</p>
+  <button id="btn">눌러보세요</button>
+
+  <script>
+    document.getElementById('btn').addEventListener('click', function () {
+      alert('안녕하세요! 버튼이 클릭됐습니다.');
+    });
+  </script>
+</body>
+</html>

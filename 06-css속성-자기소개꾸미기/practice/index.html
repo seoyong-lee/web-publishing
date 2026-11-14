@@ -1,0 +1,54 @@
+<!-- 실습 ④: 자기소개 페이지에 CSS를 입힙니다.
+     오전 실습 ③에서 만든 내 index.html이 있으면 그 파일로 진행하세요.
+     없으면 이 파일로 시작합니다. (실습 ③ 답안과 같은 구조 + 프로필 이미지)
+
+     할 일
+     1) head 안에 link:css + Tab 으로 style.css 연결
+     2) header · nav · main · footer 에 class 붙이기
+          <header class="header">  <nav class="nav">
+          <main class="main">      <footer class="footer">
+     3) 프로필 이미지에 class="profile" 붙이기
+     4) style.css 의 빈칸 채우기 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자기소개 - 이서용</title>
+  <!-- 여기에 link:css + Tab -->
+</head>
+<body>
+
+  <header>
+    <img src="https://placehold.co/120x120" alt="프로필 사진">
+    <h1>이서용</h1>
+    <p>Product Designer</p>
+  </header>
+
+  <nav>
+    <a href="#about">소개</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#contact">연락처</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>소개</h2>
+      <p>제품을 기획부터 디자인까지 직접 만드는 프로덕트 디자이너입니다.</p>
+    </section>
+
+    <section id="projects">
+      <h2>프로젝트</h2>
+      <ul>
+        <li>코두잇 - 교육 서비스</li>
+        <li>Steady - 스펙 관리 도구</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Email: hello@example.com</p>
+  </footer>
+
+</body>
+</html>

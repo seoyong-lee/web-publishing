@@ -1,0 +1,6 @@
+body { font-family: sans-serif; max-width: 640px; margin: 40px auto; }
+nav { display: flex; gap: 16px; margin-bottom: 24px; }
+nav a { color: #888; text-decoration: none; }
+nav a:hover { color: #222; text-decoration: underline; }
+nav a.current-page { color: #222; font-weight: bold; text-decoration: underline; }
+main { line-height: 1.6; }

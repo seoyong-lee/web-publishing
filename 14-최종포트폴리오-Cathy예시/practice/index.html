@@ -1,0 +1,38 @@
+<!-- 실습 ⑥ 시작 파일: 포트폴리오의 랜딩 페이지(index.html)입니다.
+     슬라이드 "2단계: 4페이지 HTML 뼈대"와 같은 구조입니다.
+
+     1) [ ] 표시를 내 정보로 바꿉니다.
+     2) 이 파일을 복사해 about.html · works.html · contact.html 을 만듭니다.
+     3) 페이지마다 title 과 main 안의 내용만 바꿉니다. header 와 footer 는 그대로 둡니다.
+
+     header 와 main 에는 class 가 미리 붙어 있습니다.
+     내일 배우는 패턴 CSS(.header, .main)가 이 class 를 고릅니다. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[이름] | 포트폴리오</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html">[이름 또는 로고]</a>
+    <nav>
+      <a href="about.html">about</a>
+      <a href="works.html">works</a>
+      <a href="contact.html">contact</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h1>[이름]</h1>
+    <p>[한 줄 소개]</p>
+    <img src="https://placehold.co/720x400" alt="[대표 이미지 설명]">
+  </main>
+
+  <footer class="footer">© 2026 [이름]</footer>
+
+</body>
+</html>

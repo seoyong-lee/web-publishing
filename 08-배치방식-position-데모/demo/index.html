@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배치 방식 · Position 데모</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>1. block / inline / inline-block 비교</h1>
+  <div class="demo-block">
+    <div class="block">block 1</div>
+    <div class="block">block 2 (다음 줄로)</div>
+  </div>
+
+  <div class="demo-inline">
+    <span class="inline">inline 1</span>
+    <span class="inline">inline 2 (같은 줄, width 지정 안 먹음)</span>
+  </div>
+
+  <div class="demo-inline-block">
+    <span class="inline-block">inline-block 1</span>
+    <span class="inline-block">inline-block 2 (같은 줄, width 지정됨)</span>
+  </div>
+
+  <h1>2. position 데모 (relative · absolute)</h1>
+  <div class="position-container">
+    <p>회색 박스는 position: relative 인 부모입니다.</p>
+    <div class="box relative">position: relative (원래 자리는 차지, top/left로 살짝 이동)</div>
+    <div class="box absolute">position: absolute (부모=relative 기준, 원래 자리 차지 안 함)</div>
+
+  </div>
+
+  <h1>3. sticky · fixed 데모</h1>
+  <p class="scroll-hint">아래로 스크롤하세요. 초록 sticky 박스는 상단에 붙고, 검은 fixed 박스는 화면 왼쪽 아래에 고정됩니다.</p>
+
+  <div class="sticky-demo">
+    <div class="sticky-scroll-top">↓ 계속 스크롤해서 초록 박스를 화면 상단까지 올려보세요</div>
+    <div class="sticky-box">position: sticky (상단 도달 시 고정, 부모 영역 벗어나면 함께 사라짐)</div>
+    <div class="sticky-scroll-bottom">sticky가 붙은 상태로 이 영역을 지나가면, 초록 박스는 다시 위로 올라갑니다.</div>
+  </div>
+
+  <div class="scroll-area">fixed · sticky 확인용 추가 스크롤 영역입니다. 검은 fixed 박스는 계속 같은 자리에 있습니다.</div>
+
+  <div class="fixed-box">position: fixed</div>
+
+</body>
+</html>

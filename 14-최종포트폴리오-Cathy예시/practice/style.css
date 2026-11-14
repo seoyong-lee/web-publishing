@@ -1,0 +1,42 @@
+/* 실습 ⑥ 시작 파일. 네 페이지가 이 파일 하나를 함께 씁니다.
+   위 세 줄은 기본 설정입니다. 그대로 두세요.
+   아래 빈 중괄호는 Day 4 패턴 장을 보면서 채웁니다. */
+
+* { box-sizing: border-box; }      /* 크기에 padding · border 포함 */
+body { margin: 0; }                /* 브라우저 기본 바깥 여백 제거 */
+img { max-width: 100%; }           /* 이미지가 화면 밖으로 넘치지 않게 */
+
+/* 타이포그래피: 전체 기본값 → 제목 → 본문 순서 */
+html {
+
+}
+
+/* 패턴 1 — 1컬럼 레이아웃 */
+.main {
+
+}
+
+/* 패턴 2 — 가로 내비게이션 */
+.header {
+
+}
+.header nav {
+
+}
+
+/* 패턴 3 — 카드 목록 (works.html)
+   HTML 은 이렇게 씁니다.
+   <div class="works">
+     <div class="work"> <img …> <h2>제목</h2> <p>설명</p> </div>
+     <div class="work"> … </div>
+   </div> */
+.works {
+
+}
+.work img {
+
+}
+
+.footer {
+
+}

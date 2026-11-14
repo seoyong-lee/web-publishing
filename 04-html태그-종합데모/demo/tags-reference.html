@@ -1,0 +1,113 @@
+<!-- HTML 필수 태그 종합 데모 (p.62~74 대응)
+     각 태그별로 실제 화면에서 어떻게 보이는지 확인하고,
+     크롬 개발자 도구(F12)로 구조를 함께 살펴보세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 태그 종합 데모</title>
+  <style>
+    body { font-family: sans-serif; max-width: 720px; margin: 40px auto; line-height: 1.5; }
+    section { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 1px solid #eee; }
+    h2 { color: #6c5ce7; }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>1. 링크 — a href</h2>
+    <a href="https://codeit.kr" target="_blank">전체 주소 링크 (새 탭)</a><br>
+    <a href="tags-reference.html">상대 주소 링크 (같은 페이지)</a>
+  </section>
+
+  <section>
+    <h2>2. 제목 태그 — h1~h6</h2>
+    <h1>h1 제목</h1>
+    <h2>h2 제목</h2>
+    <h3>h3 제목</h3>
+  </section>
+
+  <section>
+    <h2>3. 본문 — p / 줄바꿈 br / 가로선 hr</h2>
+    <p>이것은 본문 문단입니다.<br>br 태그로 줄을 바꿨습니다.</p>
+    <hr>
+    <p>hr 태그 아래는 새로운 내용입니다.</p>
+  </section>
+
+  <section>
+    <h2>4. 리스트 — ol / ul</h2>
+    <ol>
+      <li>순서 리스트 1</li>
+      <li>순서 리스트 2</li>
+    </ol>
+    <ul>
+      <li>순서 없는 리스트 A</li>
+      <li>순서 없는 리스트 B</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. 표 — table / thead / tbody / tfoot</h2>
+    <table border="1" cellpadding="8">
+      <thead>
+        <tr><th>플랜</th><th>가격</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Basic</td><td>0원</td></tr>
+        <tr><td>Premium</td><td>9,900원</td></tr>
+      </tbody>
+      <tfoot>
+        <tr><td colspan="2">부가세 별도</td></tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <section>
+    <h2>6. 이미지 — img</h2>
+    <img src="https://placehold.co/200x120" alt="placeholder 이미지" width="200" height="120">
+  </section>
+
+  <section>
+    <h2>7. iframe</h2>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="320" height="180"></iframe>
+  </section>
+
+  <section>
+    <h2>8. 입력 폼 — form / label / input / select / button</h2>
+    <form>
+      <label for="username">아이디</label><br>
+      <input type="text" id="username" name="username" placeholder="아이디를 입력하세요"><br><br>
+
+      <label for="fruit">좋아하는 과일</label><br>
+      <select id="fruit" name="fruit">
+        <option value="apple">사과</option>
+        <option value="banana">바나나</option>
+      </select><br><br>
+
+      <button type="submit">제출</button>
+      <button type="reset">초기화</button>
+      <button type="button" onclick="alert('버튼 클릭!')">커스텀 동작</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>9. div / span</h2>
+    <div style="background:#f0f0f0; padding:16px;">
+      이건 div로 감싼 영역입니다.
+      <span style="color:red; font-weight:bold;">이 부분만 span으로 강조</span>했습니다.
+    </div>
+  </section>
+
+  <section>
+    <h2>10. 시맨틱 태그 — header / main / footer / nav</h2>
+    <header style="background:#eee; padding:8px;">헤더 영역 (header)</header>
+    <nav style="padding:8px;">
+      <a href="#">메뉴1</a> | <a href="#">메뉴2</a>
+    </nav>
+    <main style="padding:8px;">메인 콘텐츠 영역 (main)</main>
+    <footer style="background:#eee; padding:8px;">푸터 영역 (footer)</footer>
+  </section>
+
+</body>
+</html>
