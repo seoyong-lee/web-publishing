@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+
+/* ① 전체 기본값 */
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ② 제목 공통 · ③ 크기 단계 */
+h1, h2, h3 { font-weight: 700; line-height: 1.2; }
+h1 { font-size: 40px; }
+h2 { font-size: 28px; }
+h3 { font-size: 20px; }
+
+/* ④ 바탕 */
+body { margin: 0; background-color: #faf9f7; }
+
+/* ⑤ 머리말 */
+.header {
+  background-color: #6c5ce7;
+  color: #fff;
+  text-align: center;
+  padding: 48px 16px;
+}
+.header h1 { margin: 16px 0 8px; }
+.header p { margin: 0; }
+.profile { width: 96px; border-radius: 50%; }
+
+/* ⑥ 메뉴: nav 안의 a만 */
+.nav { text-align: center; padding: 16px; background-color: #fff; }
+.nav a { margin: 0 12px; color: #6c5ce7; text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+
+/* ⑦ 본문 폭: 넓은 화면에서도 가운데 */
+.main { max-width: 640px; margin: 0 auto; padding: 32px 16px; }
+
+/* ⑧ 프로젝트 카드 */
+.projects { list-style: none; padding: 0; }
+.card {
+  background-color: #fff;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.card h3 { margin: 0 0 4px; }
+.card p { margin: 0; color: #666; }
+
+/* ⑨ 꼬리말 */
+.footer { text-align: center; padding: 24px 16px; color: #999; font-size: 14px; }

@@ -1,0 +1,52 @@
+/* 실습 ④-2: 빈칸( : 뒤 )을 채워 색 · 여백 · 카드를 완성합니다.
+   ①~③은 ④-1에서 정한 웹 폰트와 글자 크기입니다. 내 값으로 바꿔도 됩니다. */
+
+/* 박스 크기를 Figma처럼: padding · border를 width에 포함 */
+* { box-sizing: border-box; }
+
+/* ① 전체 기본값 */
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ② 제목 공통 · ③ 크기 단계 */
+h1, h2, h3 { font-weight: 700; line-height: 1.2; }
+h1 { font-size: 40px; }
+h2 { font-size: 28px; }
+h3 { font-size: 20px; }
+
+/* ④ 바탕 */
+body { margin: ; background-color: ; }
+
+/* ⑤ 머리말 */
+.header {
+  background-color: ;
+  color: ;
+  text-align: center;
+  padding: ;            /* 위아래 · 좌우 */
+}
+.profile { width: ; border-radius: ; }
+
+/* ⑥ 메뉴: nav 안의 a만 */
+.nav { text-align: center; padding: ; }
+.nav a { margin: 0 12px; color: ; text-decoration: none; }
+.nav a:hover { text-decoration: ; }
+
+/* ⑦ 본문 폭: 넓은 화면에서도 가운데 */
+.main { max-width: ; margin: ; padding: ; }
+
+/* ⑧ 프로젝트 카드 */
+.projects { list-style: none; padding: 0; }
+.card {
+  background-color: #fff;
+  padding: ;
+  margin-bottom: ;
+  border-radius: ;
+  box-shadow: ;         /* x y 흐림 색 — 예: 0 2px 8px rgba(0, 0, 0, 0.08) */
+}
+
+/* ⑨ 꼬리말 */
+.footer { text-align: center; padding: 24px 16px; color: ; font-size: 14px; }

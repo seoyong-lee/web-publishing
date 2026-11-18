@@ -1,0 +1,31 @@
+/* ── 1. 상속 ─────────────────────────────── */
+.intro {
+  color: #6c5ce7;                  /* 글자 속성: 자식에게 물려줌 */
+  font-family: Georgia, serif;     /* 글자 속성: 자식에게 물려줌 */
+  padding: 24px;                   /* 상자 속성: 물려주지 않음 */
+  border: 2px dashed #b2bec3;      /* 상자 속성: 물려주지 않음 */
+  max-width: 640px;
+  margin: 24px auto;
+}
+
+.box {
+  background-color: #f5f3ff;       /* 이 상자에는 padding · border를 따로 쓰지 않았습니다 */
+}
+
+/* ── 2. 우선순위 ─────────────────────────── */
+/* 같은 제목(h3)에 네 규칙이 겹칩니다. 어떤 색이 이길까요? */
+h3 {                                /* 태그 선택자 */
+  color: gray;
+}
+
+.note {                             /* 클래스 선택자: 태그보다 구체적 */
+  color: blue;
+}
+
+#special {                          /* 아이디 선택자: 가장 구체적 → 이김 */
+  color: green;
+}
+
+.note {                             /* 나중에 썼지만 아이디보다 덜 구체적 → 짐 */
+  color: red;
+}

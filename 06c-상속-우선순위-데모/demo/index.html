@@ -1,0 +1,28 @@
+<!-- 상속 · 우선순위 데모: 개발자 도구(F12)를 열고 Styles 탭을 보면서 확인합니다.
+     ① 첫 번째 문단을 검사하면 'Inherited from main.intro' 아래에 물려받은 color · font-family가 보입니다.
+     ② '어떤 색으로 보일까요?' 제목을 검사하면 진 규칙에 취소선이 그어져 있습니다.
+        #special 규칙의 체크를 끄면 그다음 우선순위 규칙이 적용됩니다. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상속과 우선순위 데모</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="intro">
+    <h1>상속과 우선순위</h1>
+
+    <h2>1. 상속</h2>
+    <p>이 문단은 글자색과 글꼴을 따로 정하지 않았습니다. 부모(main)에게서 물려받습니다.</p>
+    <p><a href="#">이 링크는 보라색을 물려받지 않습니다.</a> 링크는 브라우저 기본 색이 있기 때문입니다.</p>
+    <div class="box">이 상자는 부모의 점선 테두리와 padding을 물려받지 않습니다.</div>
+
+    <h2>2. 우선순위</h2>
+    <h3 class="note" id="special">어떤 색으로 보일까요?</h3>
+  </main>
+
+</body>
+</html>
