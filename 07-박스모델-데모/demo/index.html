@@ -20,5 +20,44 @@
   <h2>3. box-sizing 비교</h2>
   <div class="box-content-box">width: 300px; box-sizing: content-box (기본값)</div>
   <div class="box-border-box">width: 300px; box-sizing: border-box</div>
+
+  <h2>4. 박스의 실제 크기 (우클릭 → 검사 → Computed 탭에서 확인)</h2>
+  <div class="size-card">width: 200px · padding: 20px · border: 2px · margin: 16px<br>보이는 너비 244px · 차지하는 너비 276px</div>
+
+  <h2>5. border와 border-radius</h2>
+  <div class="row">
+    <div class="b-solid">solid</div>
+    <div class="b-dashed">dashed</div>
+    <div class="b-dotted">dotted</div>
+    <div class="b-nostyle">스타일 없음 (안 그려짐)</div>
+  </div>
+  <blockquote class="quote">border-left로 그린 인용구 선</blockquote>
+  <input class="underline-input" placeholder="border-bottom만 있는 입력창">
+  <div class="row">
+    <div class="r r-0">0</div>
+    <div class="r r-8">8px</div>
+    <div class="r r-circle">50%</div>
+    <div class="r r-pill">999px</div>
+    <div class="r r-bubble">15px 15px 15px 0</div>
+  </div>
+
+  <h2>6. overflow — 같은 긴 글을 고정 높이 박스에 넣었을 때</h2>
+  <div class="of-row">
+    <div class="of of-visible"><b>visible</b> 내용이 박스보다 길면 아래로 삐져나와 다음 요소와 겹쳐 보입니다. 기본값이라 따로 정하지 않으면 이 상태입니다.</div>
+    <div class="of of-hidden"><b>hidden</b> 내용이 박스보다 길면 박스 경계에서 잘립니다. 둥근 카드의 이미지 모서리를 자를 때도 씁니다.</div>
+    <div class="of of-scroll"><b>scroll</b> 내용이 짧아도 길어도 항상 스크롤바가 생깁니다. 그래서 실무에서는 잘 쓰지 않습니다.</div>
+    <div class="of of-auto"><b>auto</b> 내용이 넘칠 때만 스크롤바가 생깁니다. 긴 표, 채팅 목록, 모달 본문에 씁니다.</div>
+  </div>
+  <p class="ellipsis">말줄임표: 이 문장은 아주 길어서 한 줄에 다 들어가지 않으므로 박스 끝에서 잘리고 끝에 점 세 개가 붙습니다.</p>
+  <div class="rounded-card"><img src="https://placehold.co/300x120" alt="썸네일 예시"><p>카드에 overflow: hidden → 이미지 모서리도 둥글게</p></div>
+
+  <h2>7. 마진 상쇄 (Computed 탭에서 margin 확인)</h2>
+  <div class="collapse-demo">
+    <p class="c-title">.c-title — margin-bottom: 40px</p>
+    <p class="c-desc">.c-desc — margin-top: 24px → 실제 간격은 64px이 아니라 40px</p>
+  </div>
+  <div class="parent">
+    <p class="first-child">부모에 padding이 없으면 첫 자식의 margin-top 32px이 부모 바깥으로 빠져나갑니다. .parent에 padding: 1px을 켜 보세요.</p>
+  </div>
 </body>
 </html>

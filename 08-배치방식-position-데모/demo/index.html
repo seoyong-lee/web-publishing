@@ -24,7 +24,25 @@
     <span class="inline-block">inline-block 2 (같은 줄, width 지정됨)</span>
   </div>
 
-  <h1>2. position 데모 (relative · absolute)</h1>
+  <h1>2. display 바꾸기 — 같은 메뉴, 다른 display</h1>
+  <p class="scroll-hint">a 태그는 원래 inline입니다. 세 메뉴는 HTML이 같고 display만 다릅니다.</p>
+  <nav class="menu menu-inline"><a href="#">홈</a><a href="#">작업</a><a href="#">연락</a></nav>
+  <p class="menu-caption">inline — 위아래 padding이 줄 높이를 밀어내지 못해 위 · 아래 줄과 겹칩니다</p>
+  <nav class="menu menu-inline-block"><a href="#">홈</a><a href="#">작업</a><a href="#">연락</a></nav>
+  <p class="menu-caption">inline-block — 같은 줄에 두면서 padding · 크기가 그대로 적용됩니다</p>
+  <nav class="menu menu-block"><a href="#">홈</a><a href="#">작업</a><a href="#">연락</a></nav>
+  <p class="menu-caption">block — 한 줄 전체를 차지해 세로로 쌓입니다 (모바일 메뉴)</p>
+
+  <h1>3. 숨기기와 투명도 — 가운데 상자만 바꿨을 때 옆 상자가 어떻게 되나</h1>
+  <div class="hide-row"><span class="chip">왼쪽</span><span class="chip target hide-none">display: none</span><span class="chip">오른쪽</span></div>
+  <div class="hide-row"><span class="chip">왼쪽</span><span class="chip target hide-visibility">visibility: hidden</span><span class="chip">오른쪽</span></div>
+  <div class="hide-row"><span class="chip">왼쪽</span><a href="#" class="chip target hide-opacity" onclick="alert('opacity: 0이어도 클릭됩니다'); return false;">opacity: 0</a><span class="chip">오른쪽</span></div>
+  <div class="tone-row">
+    <div class="tone tone-opacity"><span>opacity: 0.5 — 글자까지 흐려짐</span></div>
+    <div class="tone tone-rgba"><span>배경 rgba(0, 0, 0, 0.5) — 글자는 선명</span></div>
+  </div>
+
+  <h1>4. position 데모 (relative · absolute)</h1>
   <div class="position-container">
     <p>회색 박스는 position: relative 인 부모입니다.</p>
     <div class="box relative">position: relative (원래 자리는 차지, top/left로 살짝 이동)</div>
@@ -32,7 +50,30 @@
 
   </div>
 
-  <h1>3. sticky · fixed 데모</h1>
+  <h1>5. absolute 활용 패턴 — 부모에 relative, 자식에 absolute</h1>
+  <div class="pattern-row">
+    <div class="p-card">카드<span class="p-badge">3</span></div>
+    <div class="p-dropdown-wrap">
+      <button class="p-button">메뉴 ▾ (마우스를 올려 보세요)</button>
+      <ul class="p-dropdown"><li>소개</li><li>작업</li><li>연락</li></ul>
+    </div>
+    <div class="p-thumb"><img src="https://placehold.co/200x130" alt="썸네일"><span class="p-overlay">작업 보기</span></div>
+  </div>
+  <p class="scroll-hint">개발자 도구에서 .p-card의 position: relative를 꺼 보세요. 배지가 페이지 기준으로 날아갑니다.</p>
+
+  <h1>6. z-index가 안 먹을 때</h1>
+  <div class="z-stage">
+    <div class="z-box z-static">position 없음 + z-index: 999<br>→ 숫자가 무시되어 뒤에 깔림</div>
+    <div class="z-box z-rel">position: relative + z-index: 1</div>
+  </div>
+  <div class="z-stage">
+    <div class="z-parent z-parent-a">부모 A (z-index: 1)
+      <div class="z-child">자식 (z-index: 999)<br>→ 부모 A 안에서만 겨룸</div>
+    </div>
+    <div class="z-parent z-parent-b">부모 B (z-index: 2)<br>→ 자식 999보다 앞</div>
+  </div>
+
+  <h1>7. sticky · fixed 데모</h1>
   <p class="scroll-hint">아래로 스크롤하세요. 초록 sticky 박스는 상단에 붙고, 검은 fixed 박스는 화면 왼쪽 아래에 고정됩니다.</p>
 
   <div class="sticky-demo">

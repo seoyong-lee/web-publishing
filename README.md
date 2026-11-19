@@ -18,8 +18,8 @@
 | 06-1-웹폰트-적용            | 실습 ④-1    | 실습 + 정답     | 웹 폰트를 골라 link로 불러오고 html · h1~h3 글자 크기 단계 정하기 (시작 파일 = ③-2 정답)                                                                         |
 | 06-2-포트폴리오-CSS완성     | 실습 ④-2    | 실습 + 정답     | class를 붙이고 색 · 여백 · 본문 폭 · 프로젝트 카드(box-shadow) 완성 (시작 파일 = ④-1 정답 + 빈칸 CSS)                                                           |
 | 06c-상속-우선순위-데모      | Day 2 따라 하기 | demo        | 글자 속성 상속 · 상자 속성 비상속 · 태그 < 클래스 < 아이디 우선순위를 개발자 도구로 확인                                                                         |
-| 07-박스모델-데모            | p.91~94     | demo            | padding 값 개수, margin auto, box-sizing 비교                                                                                                                    |
-| 08-배치방식-position-데모   | p.100~107   | demo            | block/inline/inline-block, position 5종                                                                                                                          |
+| 07-박스모델-데모            | p.91~94     | demo            | padding 값 개수, margin auto, box-sizing 비교 + 박스 실제 크기(Computed) · border/border-radius · overflow · 마진 상쇄                                              |
+| 08-배치방식-position-데모   | p.100~107   | demo            | block/inline/inline-block, display 바꾸기 · 숨기기와 투명도 · position · absolute 활용(배지/드롭다운/덮개) · z-index · sticky/fixed                           |
 | 09-flex-정렬값-데모         | p.110       | demo            | justify-content 5종, align-items 4종, wrap, gap, grow                                                                                                            |
 | 10-flex-세로정렬-실습       | p.124~126   | 실습 + 정답     | 이미지+텍스트 Flex 세로 정렬                                                                                                                                     |
 | 11-grid-데모                | p.119~123   | demo            | 컬럼/로우 나누기, fr, repeat, minmax, 배치, grid-area                                                                                                            |

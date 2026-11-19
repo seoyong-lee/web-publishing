@@ -37,3 +37,48 @@ body { font-family: sans-serif; max-width: 700px; margin: 40px auto; }
   box-sizing: border-box; /* width에 padding, border 포함: 실제 차지 너비 = 정확히 300px */
   background-color: #00b894;
 }
+
+/* 4. 박스의 실제 크기 */
+.size-card {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid #333;
+  margin: 16px;
+  background-color: #8cb6c0;
+  font-size: 13px;
+}
+
+/* 5. border · border-radius */
+.row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+.row > div { width: 120px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 13px; text-align: center; }
+.b-solid  { border: 2px solid #333; }
+.b-dashed { border: 2px dashed #333; }
+.b-dotted { border: 2px dotted #333; }
+.b-nostyle { border: 2px #333; } /* 스타일이 없어서 테두리가 그려지지 않음 */
+.quote { margin: 0 0 16px; padding: 8px 16px; border-left: 4px solid #6c5ce7; background: #f4f3fd; }
+.underline-input { display: block; width: 260px; margin-bottom: 16px; padding: 8px 0; border: none; border-bottom: 2px solid #333; outline: none; }
+.r { background: #e6e4f9; border: 1px solid #6c5ce7; }
+.r-0 { border-radius: 0; }
+.r-8 { border-radius: 8px; }
+.row > .r-circle { width: 60px; border-radius: 50%; }
+.r-pill { border-radius: 999px; }
+.r-bubble { border-radius: 15px 15px 15px 0; }
+
+/* 6. overflow */
+.of-row { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; margin-bottom: 72px; }
+.of { width: 140px; height: 56px; padding: 8px; border: 1px solid #999; font-size: 12px; }
+.of-visible { overflow: visible; }
+.of-hidden  { overflow: hidden; }
+.of-scroll  { overflow: scroll; }
+.of-auto    { overflow: auto; }
+.ellipsis { width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border: 1px solid #999; padding: 8px; }
+.rounded-card { width: 300px; border-radius: 16px; overflow: hidden; border: 1px solid #ddd; }
+.rounded-card img { display: block; width: 100%; }
+.rounded-card p { margin: 0; padding: 12px; font-size: 13px; }
+
+/* 7. 마진 상쇄 */
+.collapse-demo { background: #f0f0f0; padding: 1px 16px; margin-bottom: 24px; }
+.c-title { margin-bottom: 40px; background: #e6e4f9; }
+.c-desc  { margin-top: 24px; background: #e6e4f9; }
+.parent { background: #fde8c8; /* padding: 1px; */ }
+.first-child { margin-top: 32px; background: #e6e4f9; }
